@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+							<div data-th-each="comment : ${comments}"  class="flat-testimonial">
+                                <div class="testimonial-meta">            
+                                    <div class="testimonial-image">
+                                        <img src="images/testimonials/star.png" alt="images">
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <strong data-th-text="${comment.username}" class="author-name">刘强东</strong>
+                                        <div class="author-info"></div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <blockquote>
+                                    [(${comment.context})]
+                                    </blockquote>
+                                </div>
+                            </div>
+</body>
+</html>

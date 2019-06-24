@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>货运中国-后台管理</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Easy Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<!-- lined-icons -->
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<!-- chart -->
+<script src="js/Chart.js"></script>
+
+<link href="images/favicon.ico" rel="shortcut icon">
+<!-- //chart -->
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+	
+<script  src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var username="[[${user.username}]]";
+	  $("#toUserIndex").click(function(){
+	    $("#toUserIndex").attr("href","/user/index/"+username);
+	  });
+	  $("#toUserAirplaneInfo").click(function(){
+		    $("#toUserAirplaneInfo").attr("href","/user/AirplaneInfo/"+username);
+	  });
+	  $("#toUserTransportInfo").click(function(){
+		    $("#toUserTransportInfo").attr("href","/user/TransportInfo/"+username);
+	  });
+	  $("#toUserPublishTransportInfo").click(function(){
+		    $("#toUserPublishTransportInfo").attr("href","/user/publishCarInfo/"+username);
+	  });
+	  $("#toUserPublishAirplaneInfo").click(function(){
+		    $("#toUserPublishAirplaneInfo").attr("href","/user/PublishAirplaneInfo/"+username);
+	  });
+	  $("#toDropdownUserTransportInfo").click(function(){
+		 	 $("#toDropdownUserTransportInfo").attr("href","/user/TransportInfo/"+username);
+	  });
+	  $("#toDropdownUserAirplaneInfo").click(function(){
+		 	 $("#toDropdownUserAirplaneInfo").attr("href","/user/AirplaneInfo/"+username);
+	  });
+	  
+	});
+</script>
+<!--//end-animate-->
+<!----webfonts--->
+<link href='http://fonts.useso.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<!---//webfonts---> 
+ <!-- Meters graphs -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!-- Placed js at the end of the document so the pages load faster -->
+
+
+	<!--加入内部的选择框-->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<link href="style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+	<link href="style/authority/common_style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="scripts/authority/commonAll.js"></script>
+	<title>信息管理系统</title>
+	<style>
+		.alt td{ background:black !important;}
+	</style>
+
+<!--分页style-->
+    <style>
+        .tcdPageCode{padding: 15px 20px;text-align: left;color: #ccc;text-align:center;}
+        .tcdPageCode a{display: inline-block;color: #428bca;display: inline-block;height: 25px;	line-height: 25px;	padding: 0 10px;border: 1px solid #ddd;	margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+        .tcdPageCode a:hover{text-decoration: none;border: 1px solid #428bca;}
+        .tcdPageCode span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #428bca;	border: 1px solid #428bca;border-radius: 4px;vertical-align: middle;}
+        .tcdPageCode span.disabled{	display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;	color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;border-radius: 4px;vertical-align: middle;}
+    </style>
+
+</head> 
+   
+ <body class="sticky-header left-side-collapsed"  onload="initMap()">
+    <section>
+    <!-- left side start-->
+		<div class="left-side sticky-left-side">
+
+			<!--logo and iconic logo start-->
+			<div class="logo">
+				<h1><a id="toUserIndex" href="">企业后台 <span>管理</span></a></h1>
+			</div>
+			<div class="logo-icon text-center">
+				<a id="toUserIndex"><i class="lnr lnr-home"></i> </a>
+			</div>
+
+			<!--logo and iconic logo end-->
+			<div class="left-side-inner">
+
+				<!--sidebar nav start-->
+					<ul class="nav nav-pills nav-stacked custom-nav">
+						<li><a id="toUserIndex" href=""><i class="lnr lnr-power-switch"></i><span>首页</span></a></li>
+						<li class="menu-list act">
+							<a href="#"><i class="lnr lnr-cog"></i>
+								<span>运输信息</span></a>
+								<ul class="sub-menu-list">
+									<li><a id="toUserTransportInfo" href="">车源信息</a> </li>
+									<li class="active"><a id="toUserAirplaneInfo" href="">空运信息<span class="sr-only">(current)</span></a></li>
+								</ul>
+						</li>
+						<li class="menu-list">
+							<a href="#"><i class="lnr lnr-spell-check"></i>
+								<span>发布信息</span></a>
+							<ul class="sub-menu-list">
+								<li><a id="toUserPublishTransportInfo" href="">车源发布</a> </li>
+								<li><a id="toUserPublishAirplaneInfo" href="">空运发布</a></li>
+							</ul>
+						</li>
+					</ul>
+				<!--sidebar nav end-->
+			</div>
+		</div>
+    <!-- left side end-->
+    
+    <!-- main content start-->
+		<div class="main-content main-content2">
+			<!-- header-starts -->
+			<div class="header-section">
+			 
+			<!--toggle button start-->
+			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+			<!--toggle button end-->
+
+			<!--notification menu start -->
+			<div class="menu-right">
+				<div class="user-panel-top">
+					<div class="profile_details">		
+						<ul>
+							<li class="dropdown profile_details_drop">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<div class="profile_img">	
+										<span style="background:url(images/1.jpg) no-repeat center"> </span> 
+										 <div class="user-name">
+											<p>[(${user.username})]</p><span>[(${user.companyname})]</span>
+										 </div>
+										 <i class="lnr lnr-chevron-down"></i>
+										 <i class="lnr lnr-chevron-up"></i>
+										<div class="clearfix"></div>	
+									</div>	
+								</a>
+								<ul class="dropdown-menu drp-mnu">
+									<li> <a id="toDropdownUserTransportInfo" href=""><i class="fa fa-user"></i>车源信息</a> </li> 
+									<li> <a id="toDropdownUserAirplaneInfo" href=""><i class="fa fa-user"></i>空运信息</a> </li> 
+									<li> <a href="sign-up.html"><i class="fa fa-sign-out"></i> 退出</a> </li>
+								</ul>
+							</li>
+							<div class="clearfix"> </div>
+						</ul>
+					</div>		
+					<div class="social_icons">
+						<div class="col-md-4 social_icons-left">
+						</div>
+						<div class="col-md-4 social_icons-left pinterest">
+						</div>
+						<div class="col-md-4 social_icons-left twi">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!--notification menu end -->
+			</div>
+	<!-- //header-ends -->
+			<div id="page-wrapper">
+				<div class="graphs">
+					<form id="submitForm" name="submitForm" action="" method="post">
+						<input type="hidden" name="allIDCheck" value="" id="allIDCheck"/>
+						<input type="hidden" name="fangyuanEntity.fyXqName" value="" id="fyXqName"/>
+						<div id="container">
+							<div class="ui_content">
+								<div class="ui_text_indent">
+									<div id="box_border">
+										<div id="box_top">空运信息</div>
+										<div id="box_center">
+											飞机号
+											<input type="text" class="ui_select01" >
+											飞机类型
+											<select name="fangyuanEntity.fyDhCode" id="fyDh" class="ui_select01">
+												<option value="" type="checkbox">普通飞机</option>
+											</select>
+											出发地
+											<input type="text" class="ui_select01" >
+											目的地
+											<input type="text" class="ui_select01" >
+											<input type="button" value="查询" class="ui_input_btn01" onclick="search();" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ui_content">
+								<div class="ui_tb">
+									<table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+										<tr>
+											<!--<th width="30">-->
+											<!--<input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);" />-->
+											<!--</th>-->
+											<th>飞机号</th>
+											<th>飞机类型</th>
+											<th>机长</th>
+											<th>载重</th>
+											<th>注册时间</th>
+											<th>起发地</th>
+											<th>目的地</th>
+											<th>操作</th>
+										</tr>
+										<tr>
+											<td>A1</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A2</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A3</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A4</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A5</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A6</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A7</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A8</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A9</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>A10</td>
+											<td>普通飞机</td>
+											<td>7m</td>
+											<td>10t</td>
+											<td>2018-04-05 19:33:00</td>
+											<td>北京</td>
+											<td>黑龙江</td>
+											<td>
+												<a href="#" class="edit">编辑</a>
+												<a href="#">删除</a>
+											</td>
+										</tr>
+
+
+									</table>
+								</div>
+									<div class="tcdPageCode"></div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+   
+      <!--分页-->
+<script src="js/jquery.page.js"></script>
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount:20,
+        current:1,
+        backFn:function(p){
+            console.log(p);
+        }
+    });
+</script>
+</body>
+</html>

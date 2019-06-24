@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mxl.demo.mapper.CommentMapper">
+	<select id="selectAllByLimit"  resultType="Comment">
+		SELECT * FROM COMMENT  LIMIT ${start},${pageSize}
+	</select>
+	<select id="selectCount"  parameterType="int" resultType="int">
+		SELECT COUNT(*) FROM COMMENT
+	</select>
+	<insert id="insertComment" parameterType="Comment">
+		INSERT INTO COMMENT VALUE (NULL,#{username},#{context})
+	</insert>
+</mapper>

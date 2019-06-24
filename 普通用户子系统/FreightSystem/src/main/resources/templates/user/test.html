@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+							<div th:each="city : ${cities}" th:text="${city.name}" class="flat-testimonial">
+                                <div class="testimonial-meta">            
+                                    <div class="testimonial-image">
+                                        <img src="images/testimonials/star.png" alt="images">
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <strong th:text="${city.name}" class="author-name">刘强东</strong>
+                                        <div class="author-info"></div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <blockquote th:text="${city.name}">
+                                        货运中国非常适合合作。他们有很多地方，有竞争力的价格，他们优秀的员工将超越他们的合作伙伴。我期待着将来和他们一起工作 <br>谢谢你们!
+                                    </blockquote>
+                                </div>
+                            </div>
+</body>
+</html>

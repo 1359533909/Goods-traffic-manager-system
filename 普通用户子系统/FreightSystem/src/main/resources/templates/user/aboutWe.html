@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>货流中国-关于我们</title>
+
+    <meta name="author" content="themesflat.com">
+
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <!--自定义的css样式-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" id="mygbc" href="css/globalBackgroudColor.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script  src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var username="[[${username}]]";
+	  $("#setUsername").val(username);
+	  $("#toUserIndex").click(function(){
+	    $("#toUserIndex").attr("href","/user/index/"+username);
+	  });
+	  $("#toUserSupplyOfGoods").click(function(){
+		    $("#toUserSupplyOfGoods").attr("href","/user/SupplyOfGoods/"+username);
+	  });
+	  $("#toUserSupplyOfCars").click(function(){
+		    $("#toUserSupplyOfCars").attr("href","/user/SupplyOfCars/"+username);
+	  });
+	  $("#toUserSupplyOfAirplane").click(function(){
+		    $("#toUserSupplyOfAirplane").attr("href","/user/SupplyOfAirplane/"+username);
+	  });
+	  $("#toUserNewsInfo").click(function(){
+		    $("#toUserNewsInfo").attr("href","/user/NewsInfo/"+username);
+	  });
+	  $("#toUseraboutWe").click(function(){
+		    $("#toUseraboutWe").attr("href","/user/aboutWe/"+username);
+	  });
+	});
+</script>
+    
+    
+</head>
+<body class="header-sticky">
+
+
+<!-- Boxed -->
+<div class="boxed">
+    <div class="site-header header-v2">
+        <!--导航栏-->
+        <nav class="navbar mynavbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header col-md-3">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-brandmy" href="#"><img   src="images/logo.png"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-out-my" id="bs-example-navbar-collapse-1">
+                    <ul class="nav col-md-7  navbar-nav">
+                            <li><a class="navbar-inner-my" href="#" id="toUserIndex">首页</a></li>
+                            <li><a class="navbar-inner-my" href="#" id="toUserSupplyOfGoods">货源信息</a></li>
+                            <li><a class="navbar-inner-my" href="#" id="toUserSupplyOfCars">车源信息</a></li>
+                            <li><a class="navbar-inner-my" href="#" id="toUserSupplyOfAirplane">空运信息</a></li>
+                            <li><a class="navbar-inner-my" href="#" id="toUserNewsInfo">新闻信息</a></li>
+                            <li class="active"><a href="#" id="toUseraboutWe">关于我们<span class="sr-only">(current)</span></a></li>
+                        </ul>
+                     <ul class="nav col-md-2 navbar-nav navbar-right" style="font-weight: 100">
+                            <li><a>欢迎</a></li>
+                            <li class="nav-shu-my hidden-xs" >[(${username})]</li>
+                            <li><a href="/logout">退出</a></li>
+                     </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    </div><!-- /.site-header -->
+
+      <div class="flat-row flat-general sidebar-right pad-bottom75px">
+        <div class="container">
+            <div class="row">
+                <div class="general">
+                    <div class="general-slider about-slider">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <a class="popup-gallery" href="images/about/1.jpg"><img src="images/about/1.jpg" alt="images"></a>
+                                </li>
+                                <li>
+                                    <a class="popup-gallery" href="images/about/2.jpg"><img src="images/about/2.jpg" alt="images"></a>
+                                </li>
+                                <li>
+                                    <a class="popup-gallery" href="images/about/3.jpg"><img src="images/about/3.jpg" alt="images"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /.about-slider -->
+
+                    <div class="flat-divider d30px"></div>
+
+                    <h3 class="flat-title-section style mag-top10px">公司 <span>简介</span></h3>
+                    <p>“货流中国”是一款专业的货运信息网站，具备分布全国各城市的经营网络，
+是一个资源共享的实力联盟。物流企业而言，咋联盟内可以得到异地优势专线的
+支持，直接面向全国进行货运代理；对货主而言，可以通过联盟快速找到遍及全
+国各地的优质专线物流公司提供的最具竞争力货运线路，将物流成本做到最小化。</p>
+					<p>“货流中国”努力做全国最好的、开放的、中立的物流业电子信息平台，为客
+户提供最有效、最及时、最有针对性的物流信息。做全国最好的、开放的、中立的
+物流业电子信息平台。今日，“货流中国”企业使命：让天下没有难做的物流；
+让天下没有难找的物流。今日.货流中国企业价值观：客户第一：关注客户的关注点，
+为客户提供建议和咨询，与客户一起成长。团队合作：共享共担，风雨兼程。诚信正直：
+诚实正直，信守承诺，说到做到。务实创新：重实际、说实话、务实事、求实效；
+应用创新，技术创新，商业模式创新。</p>
+<p>我们不是广告，而是宣传。“生产企业”、“批发市场”、“仓储”、“有物流需求
+的直客”、“对现有货代不满意的货主”这些客户都可以通过“货流中国”服务在互联网
+上找到更适合的物流企业。</p>
+                    <div class="promobox">
+                        <h5 class="promobox-title mag-top0px">我们会处理好您的货物或您的乘客，并按时安全运送。</h5>
+                        <div class="group-btn">
+                            <a class="button black" href="#">关于我们 <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div><!-- /.promobox -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="flat-tabs">
+                                <ul class="menu-tabs">
+                                    <li class="active"><a href="#">安全</a></li>
+                                    <li><a href="#">保证</a></li>
+                                </ul>
+                                <div class="content-tab">
+                                    <div class="content-inner">
+                                        <p>在货运中国公司，确保客户、员工和社区的安全是我们的首要任务。我们明白持续培训的重要性，并为我们的安全知识、经验丰富的员工和年复一年超越行业标准的能力感到自豪。我们建立并持续保持优良的电机载流子安全等级和低事故频率。</p>
+                                        <p>作为一个公司，我们拥有坚实的安全性能历史，并将继续在安全和合规领域的领导者，由于我们车队的司机和车辆维修人员的敬业精神和专业精神。</p>
+                                    </div><!-- /.content-inner -->
+
+                                    <div class="content-inner">
+                                        <p>在货运中国，我们提供业界领先的资产保护和安全合规项目。</p>
+                                        <p>通过利用现代和成熟的技术，我们提供了完整的客户资产，而在运输或在我们的设施之一。</p>
+                                    </div><!-- /.content-inner -->
+                                </div><!-- /.content-tab -->
+                            </div><!-- /.flat-tabs -->
+                        </div><!-- /.col-md-6 -->
+
+                        <div class="col-md-6">
+                            <img src="images/img-single/1.jpg" alt="images">
+                            <div class="flat-divider d30px"></div>
+                            <img src="images/img-single/2.jpg" alt="images">
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.general -->
+
+                <div class="general-sidebars">
+                    <div class="sidebar-wrap">
+                        <div class="sidebar">
+
+                            <div class="widget widget_recent_entries">
+                                <h4 class="widget-title">公司新闻</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">提高生产率 &amp; 仓库扩容</a>
+                                        <span class="post-date">2019-10-10</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">海上物流进入管理阶段</a>
+                                        <span class="post-date">2019-10-10</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">海上运输管理人员的成长将使管理更加独特</a>
+                                        <span class="post-date">2019-10-10</span>
+                                    </li>
+                                </ul>
+                            </div><!-- /.widget_recent_entries -->
+
+
+                        </div><!-- /.sidebar -->
+                    </div><!-- /.sidebar-wrap -->
+                </div><!-- /.general-sidebars -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.blog -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content-bottom-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="flat-wrapper">
+                        <div class="ft-wrapper clearfix">
+                            <div class="footer-50">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="counter">
+                                            <div class="counter-image"><i class="fa fa-building-o"></i></div>
+                                            <div class="numb-count" data-to="2223" data-speed="3000" data-waypoint-active="yes">2223</div>
+                                            <div class="counter-title">
+                                                企业数量
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+
+                                    <div class="col-md-4">
+                                        <div class="counter ft-style1">
+                                            <div class="counter-image"><i class="fa fa-group"></i></div>
+                                            <div class="numb-count" data-to="14444" data-speed="3000" data-waypoint-active="yes">14444</div>
+                                            <div class="counter-title">
+                                                员工数量
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+
+                                    <div class="col-md-4">
+                                        <div class="counter ft-style2">
+                                            <div class="counter-image"><i class="fa fa-globe"></i></div>
+                                            <div class="numb-count" data-to="15555" data-speed="3000" data-waypoint-active="yes">15555</div>
+                                            <div class="counter-title">
+                                                城市覆盖
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.footer-50 -->
+
+
+                        </div><!-- /.flat-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-widgets -->
+
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="widge widget_text">
+                                <div class="textwidget">
+                                    <h2>西南货运 - 商业, 运输, 货流 &amp; 车源</h2>
+                                </div>
+                            </div><!-- /.widget_text -->
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_recent_entries">
+                                <h4 class="widget-title">最新新闻</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">提高效率 &amp; 扩大仓库</a>
+                                        <span class="post-date">5月 25, 2018</span>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html">空运货流进入管理阶段</a>
+                                        <span class="post-date">5月 25, 2018</span>
+                                    </li>
+                                </ul>
+                            </div><!-- /.widget_recent_entries -->
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">信息</h3>
+                                <div class="menu-footer-menu-container">
+                                    <ul class="menu-footer-menu">
+                                        <li><a href="#">首页</a></li>
+                                        <li><a href="#">车源信息</a></li>
+                                        <li><a href="#">货源信息</a></li>
+                                        <li><a href="#">关于我们</a></li>
+                                        <li><a href="#">功能中心</a></li>
+                                        <li><a href="#">新闻播报</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_text information">
+                                <h3 class="widget-title">联系我们</h3>
+                                <div class="textwidget">
+                                    <p><strong>西南大学商贸学院学院路56号</strong></p>
+                                    <p>
+                                        <i class="fa fa-phone"></i>  001-123-456-7890<br>
+                                        <i class="fa fa-envelope"></i>themesflat@qq.com
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-phone"></i>  007-123-456-7890<br>
+                                        <i class="fa fa-envelope"></i>themesflat@qq.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-content -->
+
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="flat-wrapper">
+                            <div class="ft-wrap clearfix">
+                                <div class="copyright">
+                                    <div class="copyright-content">
+                                        版权 &copy; 2019.公司名称版权所有<a target="_blank" href="http://sc.chinaz.com/moban/"></a>
+                                    </div>
+                                </div>
+                            </div><!-- /.ft-wrap -->
+                        </div><!-- /.flat-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-content -->
+        </div>
+    </footer>
+
+    <!-- Go Top -->
+    <a class="go-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+</div>
+
+<!-- Javascript -->
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.easing.js"></script>
+<script type="text/javascript" src="javascript/owl.carousel.js"></script>
+<script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+<script type="text/javascript" src="javascript/jquery-countTo.js"></script>
+<script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+<!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?sensor=false"></script>--->
+<!---<script type="text/javascript" src="javascript/gmap3.min.js"></script>--->
+<script type="text/javascript" src="javascript/jquery-validate.js"></script>
+<script type="text/javascript" src="javascript/switcher.js"></script>
+<script type="text/javascript" src="javascript/parallax.js"></script>
+<script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="javascript/slider.js"></script>
+</body>
+</html>

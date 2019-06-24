@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>货流中国-新闻界面</title>
+
+    <meta name="author" content="themesflat.com">
+
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/animate.css">
+
+    <!--自定义的css样式-->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" id="mygbc" href="/css/globalBackgroudColor.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <!-- Favicon and touch icons  -->
+    <link href="/icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="/icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+
+    <!--新闻界面单独样式-->
+    <link rel="stylesheet" href="/css/font-icons.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="header-sticky">
+
+<!-- Boxed -->
+<div class="boxed">
+    <div class="site-header header-v2">
+        <!--导航栏-->
+        <nav class="navbar mynavbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header col-md-3">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-brandmy" href="#"><img   src="/images/logo.png"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-out-my" id="bs-example-navbar-collapse-1">
+                    <ul class="nav col-md-7  navbar-nav">
+                        	<li><a class="navbar-inner-my" href="/index">首页</a></li>
+                            <li><a class="navbar-inner-my" href="/SupplyOfGoods">货源信息</a></li>
+                            <li><a class="navbar-inner-my" href="/SupplyOfCars">车源信息</a></li>
+                            <li><a class="navbar-inner-my" href="/SupplyOfAirplane">空运信息</a></li>
+                            <li class="active"><a class="navbar-inner-my" href="/NewsInfo">新闻信息<span class="sr-only">(current)</span></a></li>
+                            <li><a href="/aboutWe">关于我们</a></li>
+                    </ul>
+                    <ul class="nav col-md-2 navbar-nav navbar-right">
+                        <li><a href="#">登录</a></li>
+                        <li class="nav-shu-my hidden-xs">丨</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    </div><!-- /.site-header -->
+
+    <div class="main-container container" id="main-container">
+
+        <!-- Content -->
+        <div class="row">
+
+            <!-- post content -->
+            <div class="col-lg-8 blog__content mb-30">
+
+
+                <!-- standard post -->
+                <article class="entry">
+
+                    <div class="single-post__entry-header entry__header">
+                        <h1 class="single-post__entry-title" data-th-text="${carInfo.car_type}">
+                           
+                        </h1>
+
+                        <ul class="entry__meta">
+                            <li class="entry__meta-author">
+                                <i class="ui-author"></i>
+                                <a href="#">mxl</a>
+                            </li>
+                            <li class="entry__meta-date">
+                                <i class="ui-date"></i>
+                               联系方式:15320111197
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="entry__article">
+						<p>[(${carInfo.content})]</p>
+
+
+
+                        <!-- tags -->
+                        <div class="entry__tags">
+                            <span class="entry__tags-label">标签:</span>
+                            <a href="#" rel="tag">车辆</a><a href="#" rel="tag">货车</a>
+                        </div> <!-- end tags -->
+
+                    </div> <!-- end entry article -->
+
+
+
+
+                </article> <!-- end standard post -->
+
+
+
+
+
+
+            </div> <!-- end col -->
+
+            <!-- Sidebar -->
+            <aside class="col-lg-4 sidebar sidebar--right">
+
+
+
+
+                <!-- Widget Popular/Latest Posts -->
+                <div class="widget widget-tabpost">
+                    <div class="tabs widget-tabpost__tabs">
+                        <ul class="tabs__list widget-tabpost__tabs-list">
+                            <li class="tabs__item widget-tabpost__tabs-item tabs__item--active">
+                                <a href="#tab-trending" class="tabs__url tabs__trigger widget-tabpost__tabs-url">热门新闻</a>
+                            </li>
+                            <li class="tabs__item widget-tabpost__tabs-item">
+                                <a href="#tab-latest" class="tabs__url tabs__trigger widget-tabpost__tabs-url">最新新闻</a>
+                            </li>
+                            <li class="tabs__item widget-tabpost__tabs-item">
+                                <a href="#tab-comments" class="tabs__url tabs__trigger widget-tabpost__tabs-url">生活新闻</a>
+                            </li>
+                        </ul> <!-- end tabs -->
+
+                        <!-- tab content -->
+                        <div class="tabs__content tabs__content-trigger widget-tabpost__tabs-content">
+
+                            <div class="tabs__content-pane tabs__content-pane--active" id="tab-trending">
+                                <ul class="post-list-small">
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="single-post.html">
+                                                        <img data-src="/img/blog/popular_post_1.jpg" src="/img/blog/popular_post_1.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">谷歌三个月内两轮融资.......</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                        2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="single-post.html">
+                                                        <img data-src="/img/blog/popular_post_2.jpg" src="/img/blog/popular_post_2.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">货运如何改变你的生活</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="#">
+                                                        <img data-src="/img/blog/popular_post_3.jpg" src="/img/blog/popular_post_3.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">据悉，有记录以来的最强飓风之一“帕特里......</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="#">
+                                                        <img data-src="/img/blog/popular_post_4.jpg" src="/img/blog/popular_post_4.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">创始人罗某：数据驱动，重塑服务</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tabs__content-pane" id="tab-latest">
+                                <ul class="post-list-small">
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="#">
+                                                        <img data-src="/img/blog/popular_post_2.jpg" src="/img/blog/popular_post_2.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">货运如何改变你的生活</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="#">
+                                                        <img data-src="/img/blog/popular_post_1.jpg" src="/img/blog/popular_post_1.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">货运如何改变你的生活</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="#">
+                                                        <img data-src="/img/blog/popular_post_3.jpg" src="/img/blog/popular_post_3.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">谷歌三个月内两轮融资.......</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="#">
+                                                        <img data-src="/img/blog/popular_post_4.jpg" src="/img/blog/popular_post_4.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">创始人罗某：数据驱动，重塑服务</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tabs__content-pane" id="tab-comments">
+                                <ul class="post-list-small">
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="#">
+                                                        <img data-src="/img/blog/popular_post_3.jpg" src="/img/blog/popular_post_3.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">谷歌三个月内两轮融资.......</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="single-post.html">
+                                                        <img data-src="/img/blog/popular_post_1.jpg" src="/img/blog/popular_post_1.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">货运在慢慢改变你的生活</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="single-post.html">
+                                                        <img data-src="/img/blog/popular_post_2.jpg" src="/img/blog/popular_post_2.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">货运如何改变你的生活</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="post-list-small__item">
+                                        <article class="post-list-small__entry clearfix">
+                                            <div class="post-list-small__img-holder">
+                                                <div class="thumb-container thumb-75">
+                                                    <a href="single-post.html">
+                                                        <img data-src="/img/blog/popular_post_4.jpg" src="/img/blog/popular_post_4.jpg" alt="" class=" lazyload">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-list-small__body">
+                                                <h3 class="post-list-small__entry-title">
+                                                    <a href="#">创始人罗某：数据驱动，重塑服务</a>
+                                                </h3>
+                                                <ul class="entry__meta">
+                                                    <li class="entry__meta-date">
+                                                        <i class="ui-date"></i>
+                                                       2018-10-10
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div> <!-- end tab content -->
+                    </div> <!-- end tabs -->
+                </div> <!-- end widget popular/latest posts -->
+
+                <!-- Widget Ad 300 -->
+                <div class="widget widget_media_image">
+                    <a href="#">
+                        <img src="/img/blog/placeholder_300.jpg" alt="">
+                    </a>
+                </div> <!-- end widget ad 300 -->
+
+
+
+
+                <!-- Widget Carousel -->
+                <div class="widget">
+                    <h4 class="widget-title">特色板块</h4>
+                    <div id="owl-single" class="owl-carousel owl-theme">
+
+                        <article class="entry">
+                            <div class="entry__img-holder mb-0">
+                                <a href="#">
+                                    <div class="thumb-bg-holder">
+                                        <img data-src="/img/blog/featured_post_img_1.jpg" src="/img/blog/featured_post_img_1.jpg" class="entry__img owl-lazy" alt="">
+                                        <div class="bottom-gradient"></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="thumb-text-holder">
+                                <h2 class="thumb-entry-title thumb-entry-title--sm">
+                                    <a href="#">中国两艘货船分别在曼萨尼约港和拉萨罗</a>
+                                </h2>
+                            </div>
+                        </article>
+
+                        <article class="entry">
+                            <div class="entry__img-holder mb-0">
+                                <a href="single-post.html">
+                                    <div class="thumb-bg-holder">
+                                        <img data-src="/img/blog/featured_post_img_2.jpg" src="/img/blog/featured_post_img_2.jpg" class="entry__img owl-lazy" alt="">
+                                        <div class="bottom-gradient"></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="thumb-text-holder">
+                                <h2 class="thumb-entry-title thumb-entry-title--sm">
+                                    <a href="#">强飓风“帕特里夏”在曼萨尼约港口以西95公里</a>
+                                </h2>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </div>
+
+                <!-- Latest Reviews -->
+                <div class="widget widget-reviews">
+                    <h4 class="widget-title">最新资讯</h4>
+                    <ul class="post-list-small">
+                        <li class="post-list-small__item">
+                            <article class="post-list-small__entry clearfix">
+                                <div class="post-list-small__img-holder">
+                                    <div class="thumb-container thumb-75">
+                                        <a href="#">
+                                            <img data-src="/img/blog/review_post_1.jpg" src="/img/blog/review_post_1.jpg" alt="" class=" lazyload">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-list-small__body">
+                                    <h3 class="post-list-small__entry-title">
+                                        <a href="#">墨西哥有望将200万箱的香蕉从曼萨尼约港出</a>
+                                    </h3>
+                                    <ul class="entry__meta">
+                                        <li class="entry__meta-rating">
+                                            <i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star-outline"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="post-list-small__item">
+                            <article class="post-list-small__entry clearfix">
+                                <div class="post-list-small__img-holder">
+                                    <div class="thumb-container thumb-75">
+                                        <a href="#">
+                                            <img data-src="/img/blog/review_post_2.jpg" src="/img/blog/review_post_2.jpg" alt="" class=" lazyload">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-list-small__body">
+                                    <h3 class="post-list-small__entry-title">
+                                        <a href="#">最好的货运公司.......</a>
+                                    </h3>
+                                    <ul class="entry__meta">
+                                        <li class="entry__meta-rating">
+                                            <i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star-outline"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="post-list-small__item">
+                            <article class="post-list-small__entry clearfix">
+                                <div class="post-list-small__img-holder">
+                                    <div class="thumb-container thumb-75">
+                                        <a href="#">
+                                            <img data-src="/img/blog/review_post_3.jpg" src="/img/blog/review_post_3.jpg" alt="" class=" lazyload">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-list-small__body">
+                                    <h3 class="post-list-small__entry-title">
+                                        <a href="#">再创新高！“货流中国”位列中国大宗商品电商</a>
+                                    </h3>
+                                    <ul class="entry__meta">
+                                        <li class="entry__meta-rating">
+                                            <i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star-outline"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="post-list-small__item">
+                            <article class="post-list-small__entry clearfix">
+                                <div class="post-list-small__img-holder">
+                                    <div class="thumb-container thumb-75">
+                                        <a href="#">
+                                            <img data-src="/img/blog/review_post_4.jpg" src="/img/blog/review_post_4.jpg" alt="" class=" lazyload">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-list-small__body">
+                                    <h3 class="post-list-small__entry-title">
+                                        <a href="#">“2018年中国航运界十大杰出女性”出炉 </a>
+                                    </h3>
+                                    <ul class="entry__meta">
+                                        <li class="entry__meta-rating">
+                                            <i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star"></i><!--
+                        --><i class="ui-star-outline"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Widget Tags -->
+                <div class="widget widget_tag_cloud">
+                    <h4 class="widget-title">标签</h4>
+                    <div class="tagcloud">
+                        <a href="#">杂志</a>
+                        <a href="#">创新</a>
+                        <a href="#">问答</a>
+                        <a href="#">潮流</a>
+                        <a href="#">科技</a>
+                        <a href="#">博客</a>
+                        <a href="#">网站</a>
+                        <a href="#">新闻</a>
+                    </div>
+                </div>
+
+            </aside> <!-- end sidebar -->
+
+        </div> <!-- end content -->
+    </div> <!-- end main container -->
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content-bottom-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="flat-wrapper">
+                        <div class="ft-wrapper clearfix">
+                            <div class="footer-50">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="counter">
+                                            <div class="counter-image"><i class="fa fa-building-o"></i></div>
+                                            <div class="numb-count" data-to="2223" data-speed="3000" data-waypoint-active="yes">2223</div>
+                                            <div class="counter-title">
+                                                企业数量
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+
+                                    <div class="col-md-4">
+                                        <div class="counter ft-style1">
+                                            <div class="counter-image"><i class="fa fa-group"></i></div>
+                                            <div class="numb-count" data-to="14444" data-speed="3000" data-waypoint-active="yes">14444</div>
+                                            <div class="counter-title">
+                                                员工数量
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+
+                                    <div class="col-md-4">
+                                        <div class="counter ft-style2">
+                                            <div class="counter-image"><i class="fa fa-globe"></i></div>
+                                            <div class="numb-count" data-to="15555" data-speed="3000" data-waypoint-active="yes">15555</div>
+                                            <div class="counter-title">
+                                                城市覆盖
+                                            </div>
+                                        </div>
+                                    </div><!-- /.col-md-4 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.footer-50 -->
+
+
+                        </div><!-- /.flat-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-widgets -->
+
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="widge widget_text">
+                                <div class="textwidget">
+                                    <h2>西南货运 - 商业, 运输, 货流 &amp; 车源</h2>
+                                </div>
+                            </div><!-- /.widget_text -->
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_recent_entries">
+                                <h4 class="widget-title">最新新闻</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">提高效率 &amp; 扩大仓库</a>
+                                        <span class="post-date">5月 25, 2018</span>
+                                    </li>
+                                    <li>
+                                        <a href="blog-single.html">空运货流进入管理阶段</a>
+                                        <span class="post-date">5月 25, 2018</span>
+                                    </li>
+                                </ul>
+                            </div><!-- /.widget_recent_entries -->
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_nav_menu">
+                                <h3 class="widget-title">信息</h3>
+                                <div class="menu-footer-menu-container">
+                                    <ul class="menu-footer-menu">
+                                        <li><a href="#">首页</a></li>
+                                        <li><a href="#">车源信息</a></li>
+                                        <li><a href="#">货源信息</a></li>
+                                        <li><a href="#">关于我们</a></li>
+                                        <li><a href="#">功能中心</a></li>
+                                        <li><a href="#">新闻播报</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+
+                        <div class="col-md-3">
+                            <div class="widget widget_text information">
+                                <h3 class="widget-title">联系我们</h3>
+                                <div class="textwidget">
+                                    <p><strong>西南大学商贸学院学院路56号</strong></p>
+                                    <p>
+                                        <i class="fa fa-phone"></i>  001-123-456-7890<br>
+                                        <i class="fa fa-envelope"></i>themesflat@qq.com
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-phone"></i>  007-123-456-7890<br>
+                                        <i class="fa fa-envelope"></i>themesflat@qq.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-content -->
+
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="flat-wrapper">
+                            <div class="ft-wrap clearfix">
+                                <div class="copyright">
+                                    <div class="copyright-content">
+                                        版权 &copy; 2017.公司名称版权所有<a target="_blank" href="#"></a>
+                                    </div>
+                                </div>
+                            </div><!-- /.ft-wrap -->
+                        </div><!-- /.flat-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-content -->
+        </div>
+    </footer>
+
+    <!-- Go Top -->
+    <a class="go-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+</div>
+
+<!-- Javascript -->
+<script type="text/javascript" src="/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="/javascript/bootstrap.min.js"></script>
+<script type="text/javascript" src="/javascript/jquery.easing.js"></script>
+<script type="text/javascript" src="/javascript/owl.carousel.js"></script>
+
+<!-- jQuery Scripts -->
+<script src="/js/easing.min.js"></script>
+<script src="/js/twitterFetcher_min.js"></script>
+<script src="/js/modernizr.min.js"></script>
+<script src="/js/jquery.appear.min.js"></script>
+<script src="/js/scripts.js"></script>
+
+<script type="text/javascript" src="/javascript/jquery-waypoints.js"></script>
+<script type="text/javascript" src="/javascript/jquery-countTo.js"></script>
+<script type="text/javascript" src="/javascript/jquery.cookie.js"></script>
+<!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?sensor=false"></script>--->
+<!---<script type="text/javascript" src="javascript/gmap3.min.js"></script>--->
+<script type="text/javascript" src="/javascript/jquery-validate.js"></script>
+<script type="text/javascript" src="/javascript/switcher.js"></script>
+<script type="text/javascript" src="/javascript/main.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="/javascript/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/javascript/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="/javascript/slider.js"></script>
+</body>
+</html>

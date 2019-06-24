@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mxl.demo.mapper.CarInfoMapper">
+	<select id="selectAllByLimit"  resultType="CarInfo">
+		SELECT * FROM carinfo LIMIT ${start},${pageSize}
+	</select>
+	<select id="selectAll" resultType="CarInfo">
+		SELECT * FROM carinfo
+	</select>
+	<select id="selectCount" resultType="int">
+		SELECT count(*) FROM carinfo
+	</select>
+	<select id="selectAllByCarInfo" parameterType="CarInfo" resultType="CarInfo">
+		SELECT * FROM carinfo
+		<where>
+			<if test="start_station != null and start_station != ''.trim()">
+				and start_station=#{start_station}
+			</if>
+			<if test="destination_station != null and destination_station != ''.trim()">
+				and destination_station=#{destination_station}
+			</if>
+			<if test="car_type != null and car_type != ''.trim()">
+				and car_type=#{car_type}
+			</if>
+			<if test="car_length != null and car_length != ''.trim()">
+				and car_length=#{car_length}
+			</if>
+		</where>
+	</select>
+	<select id="selectCarByCar_number" resultType="CarInfo">
+		SELECT * FROM carinfo where car_number=#{car_number}
+	</select>
+</mapper>
